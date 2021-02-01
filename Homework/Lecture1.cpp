@@ -45,3 +45,19 @@ bool Lecture1::isPrime(int a)
 
 	return true;
 }
+
+int Lecture1::indexOf(int a[], int b)
+{
+	int index = -1;
+
+	for (int i = 0; i <= sizeof(a); i++)
+	{
+		if (a[i] == b)
+		{
+			index = i;
+			break;
+		}
+	}
+
+	return index;
+}

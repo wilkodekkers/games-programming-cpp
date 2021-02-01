@@ -6,5 +6,6 @@ public:
 	void printEvenOrUneven(int a);
 	int power(int base, int exponent);
 	bool isPrime(int a);
+	int indexOf(int a[], int b);
 };
 
