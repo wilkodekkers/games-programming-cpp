@@ -53,5 +53,10 @@ namespace Test
 			Assert::AreEqual(3, lecture1.indexOf(a, 4));
 			Assert::AreEqual(4, lecture1.indexOf(a, 5));
 		}
+
+		TEST_METHOD(TestMethodGcd)
+		{
+			Assert::AreEqual(21, lecture1.gcd(1071, 462));
+		}
 	};
 }

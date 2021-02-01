@@ -61,3 +61,15 @@ int Lecture1::indexOf(int a[], int b)
 
 	return index;
 }
+
+int Lecture1::gcd(int a, int b)
+{
+	if (b == 0)
+	{
+		return a;
+	}
+	else
+	{
+		return gcd(b, a % b);
+	}
+}
