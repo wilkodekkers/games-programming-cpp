@@ -97,3 +97,8 @@ int Lecture1::gcd(int a, int b)
 		return gcd(b, a % b);
 	}
 }
+
+int Lecture1::lcd(int a, int b)
+{
+	return a * b / gcd(a, b);
+}

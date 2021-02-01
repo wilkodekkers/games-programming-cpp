@@ -9,5 +9,6 @@ public:
 	int indexOf(int a[], int b);
 	int* bubbleSort(int a[]);
 	int gcd(int a, int b);
+	int lcd(int a, int b);
 };
 
