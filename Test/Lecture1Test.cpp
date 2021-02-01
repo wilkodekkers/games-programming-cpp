@@ -54,6 +54,18 @@ namespace Test
 			Assert::AreEqual(4, lecture1.indexOf(a, 5));
 		}
 
+		TEST_METHOD(TestMethodBubbleSort)
+		{
+			int res[] = { 1,2,3,4,5 };
+			int a[] = { 4,2,1,5,3 };
+			lecture1.bubbleSort(a);
+			Assert::AreEqual(res[0], a[0]);
+			Assert::AreEqual(res[1], a[1]);
+			Assert::AreEqual(res[2], a[2]);
+			Assert::AreEqual(res[3], a[3]);
+			Assert::AreEqual(res[4], a[4]);
+		}
+
 		TEST_METHOD(TestMethodGcd)
 		{
 			Assert::AreEqual(21, lecture1.gcd(1071, 462));

@@ -62,6 +62,30 @@ int Lecture1::indexOf(int a[], int b)
 	return index;
 }
 
+int* Lecture1::bubbleSort(int a[])
+{
+	for (int i = 0; i < sizeof(a); i++)
+	{
+		bool swapped = false;
+		for (int j = 0; j < sizeof(a); j++)
+		{
+			if (a[j] > a[j + 1])
+			{
+				int t = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = t;
+				swapped = true;
+			}
+		}
+		if (swapped == false)
+		{
+			break;
+		}
+	}
+
+	return a;
+}
+
 int Lecture1::gcd(int a, int b)
 {
 	if (b == 0)

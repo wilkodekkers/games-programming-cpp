@@ -7,6 +7,7 @@ public:
 	int power(int base, int exponent);
 	bool isPrime(int a);
 	int indexOf(int a[], int b);
+	int* bubbleSort(int a[]);
 	int gcd(int a, int b);
 };
 
