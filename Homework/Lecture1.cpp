@@ -46,13 +46,13 @@ bool Lecture1::isPrime(int a)
 	return true;
 }
 
-int Lecture1::indexOf(int a[], int b)
+int Lecture1::indexOf(int arr[], int find, int length)
 {
 	int index = -1;
 
-	for (int i = 0; i <= sizeof(a); i++)
+	for (int i = 0; i <= length; i++)
 	{
-		if (a[i] == b)
+		if (arr[i] == find)
 		{
 			index = i;
 			break;

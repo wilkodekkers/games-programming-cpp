@@ -44,14 +44,16 @@ namespace Test
 
 		TEST_METHOD(TestMethodIndexOf)
 		{
-			int a[] = { 1,2,3,4,5 };
-			Assert::AreEqual(-1, lecture1.indexOf(a, 10));
-			Assert::AreEqual(-1, lecture1.indexOf(a, 0));
-			Assert::AreEqual(0, lecture1.indexOf(a, 1));
-			Assert::AreEqual(1, lecture1.indexOf(a, 2));
-			Assert::AreEqual(2, lecture1.indexOf(a, 3));
-			Assert::AreEqual(3, lecture1.indexOf(a, 4));
-			Assert::AreEqual(4, lecture1.indexOf(a, 5));
+			int a[6] = { 1,2,3,4,5,6 };
+			int len = sizeof(a) / sizeof(a[0]);
+			Assert::AreEqual(-1, lecture1.indexOf(a, 10, len));
+			Assert::AreEqual(-1, lecture1.indexOf(a, 0, len));
+			Assert::AreEqual(0, lecture1.indexOf(a, 1, len));
+			Assert::AreEqual(1, lecture1.indexOf(a, 2, len));
+			Assert::AreEqual(2, lecture1.indexOf(a, 3, len));
+			Assert::AreEqual(3, lecture1.indexOf(a, 4, len));
+			Assert::AreEqual(4, lecture1.indexOf(a, 5, len));
+			Assert::AreEqual(5, lecture1.indexOf(a, 6, len));
 		}
 
 		TEST_METHOD(TestMethodBubbleSort)
