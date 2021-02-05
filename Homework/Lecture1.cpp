@@ -62,28 +62,21 @@ int Lecture1::indexOf(int arr[], int find, int length)
 	return index;
 }
 
-int* Lecture1::bubbleSort(int a[])
+void Lecture1::bubbleSort(int arr[], int len)
 {
-	for (int i = 0; i < sizeof(a); i++)
+	for (int i = 0; i < len; i++)
 	{
-		bool swapped = false;
-		for (int j = 0; j < sizeof(a); j++)
+		for (int j = 0; j < len; j++)
 		{
-			if (a[j] > a[j + 1])
+			if (arr[j] > arr[j + 1])
 			{
-				int t = a[j];
-				a[j] = a[j + 1];
-				a[j + 1] = t;
-				swapped = true;
+				int t = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = t;
+				break;
 			}
 		}
-		if (swapped == false)
-		{
-			break;
-		}
 	}
-
-	return a;
 }
 
 int Lecture1::gcd(int a, int b)

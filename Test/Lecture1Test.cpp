@@ -60,7 +60,8 @@ namespace Test
 		{
 			int res[] = { 1,2,3,4,5 };
 			int a[] = { 4,2,1,5,3 };
-			lecture1.bubbleSort(a);
+			int len = sizeof(a) / sizeof(a[0]);
+			lecture1.bubbleSort(a, len);
 			Assert::AreEqual(res[0], a[0]);
 			Assert::AreEqual(res[1], a[1]);
 			Assert::AreEqual(res[2], a[2]);
