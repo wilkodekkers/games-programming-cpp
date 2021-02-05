@@ -10,5 +10,6 @@ public:
 	void bubbleSort(int arr[], int len);
 	int gcd(int a, int b);
 	int lcd(int a, int b);
+	int gcdAndLcd(int a, int b);
 };
 

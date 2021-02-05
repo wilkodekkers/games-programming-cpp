@@ -95,3 +95,8 @@ int Lecture1::lcd(int a, int b)
 {
 	return a * b / gcd(a, b);
 }
+
+int Lecture1::gcdAndLcd(int a, int b)
+{
+	return gcd(a, b) * lcd(a, b);
+}

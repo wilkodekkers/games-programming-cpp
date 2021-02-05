@@ -78,5 +78,10 @@ namespace Test
 		{
 			Assert::AreEqual(21, lecture1.lcd(3, 7));
 		}
+
+		TEST_METHOD(TestMethodGcdAndLcd)
+		{
+			Assert::AreEqual(35, lecture1.gcdAndLcd(5, 7));
+		}
 	};
 }
