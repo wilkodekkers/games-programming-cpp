@@ -22,5 +22,14 @@ namespace Test
 			Assert::AreEqual(1, a);
 			Assert::AreEqual(20, b);
 		}
+
+		TEST_METHOD(TestMethodIsPalindrome)
+		{
+			char x[] = "spoon";
+			Assert::AreEqual(false, lecture2.isPalindrome(x));
+
+			char y[] = "lepel";
+			Assert::AreEqual(true, lecture2.isPalindrome(y));
+		}
 	};
 }

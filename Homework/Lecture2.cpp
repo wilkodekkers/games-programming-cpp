@@ -11,7 +11,7 @@ void Lecture2::fraction(int& nominator, int& denominator)
 	denominator = denominator / d;
 }
 
-void Lecture2::printCharacterArray(char arr[][10], int len) 
+void Lecture2::printCharacterArray(char arr[][10], int len)
 {
 	for (int i = 0; i < len; i++) {
 		for (int j = 0; j < 10; j++) {
@@ -19,4 +19,16 @@ void Lecture2::printCharacterArray(char arr[][10], int len)
 		}
 		std::cout << std::endl;
 	}
+}
+
+bool Lecture2::isPalindrome(char* word)
+{
+	int length = strlen(word);
+	for (int i = 0; i < length; i++) {
+		if (word[i] != word[length - i - 1]) {
+			return false;
+		}
+	}
+
+	return true;
 }
